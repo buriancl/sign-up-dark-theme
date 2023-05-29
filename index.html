@@ -7,5 +7,65 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <p class="signin-msg">Already have an account? <a href="#">Sign in</a></p>
+      <h2 class="signup-title">Have a question about this product?</h2>
+      <p class="instructions">
+        Have a question about this product? Sign up for a free account to open
+        an issue and contact its maintainers.
+      </p>
+
+      <form class="signup-form">
+        <div class="input-container">
+          <label for="username">Pick a username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Create a username"
+          />
+          <p class="error-msg" id="username-error">
+            Username must be at least 3 characters long and unique.
+          </p>
+        </div>
+        <div class="input-container">
+          <label for="email">Your email address</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <p class="error-msg" id="email-error">
+            Please enter a valid email address.
+          </p>
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter a password"
+          />
+          <p class="error-msg" id="password-error">
+            Password must contain: <br />
+            At least 8 characters <br />
+            1 Uppercase letter <br />
+            1 Lowercase letter <br />
+            1 Number <br />
+            1 Special Character !@#$%^&*
+          </p>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="legals">
+        By clicking "Sign Up", you agree to our
+        <a href="#">terms of service</a> and <a href="#">privacy statement</a>.
+        We'll occasionally send you account related emails.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

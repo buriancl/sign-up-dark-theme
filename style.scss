@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #151e33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-image: radial-gradient(
+    circle at top right,
+    #213154 0%,
+    #151e33 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 785px;
+  height: 962px;
+  position: relative;
+}
+
+.signin-msg {
+  position: absolute;
+  top: 51px;
+  right: 50px;
+
+  a {
+    color: #f089a0;
+    text-decoration: none;
+  }
+}
+
+.signup-title {
+  font-size: 26px;
+  margin-bottom: 27px;
+}
+
+.instructions {
+  font-size: 16px;
+  width: 360px;
+  margin-bottom: 33px;
+  line-height: 26px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 385px;
+  margin-bottom: 45px;
+
+  .input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 27px;
+    gap: 10px;
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    input {
+      background: transparent;
+      border: 1px solid #495e8d;
+      padding: 24px;
+      color: inherit;
+      border-radius: 8px;
+      font-size: 18px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .input-container:last-child {
+    margin-bottom: 33px;
+  }
+
+  .error-msg {
+    color: red;
+    font-size: 12px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  button {
+    width: 100%;
+    background-color: #f089a0;
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+    color: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.legals {
+  width: 583px;
+  height: 111px;
+  font-size: 14px;
+  color: #8f9ab2;
+  text-align: center;
+  padding: 35px 68px;
+  background-color: #202e4e;
+  border-radius: 8px;
+
+  a {
+    text-decoration: none;
+    color: #f089a0;
+  }
+}
